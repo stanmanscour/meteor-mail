@@ -1,0 +1,52 @@
+<template name="email">
+
+
+
+<div class="message">
+        <h2><span class="icon icon-star-large"></span> {{renderThis}} <span class="icon icon-reply-large"></span><span class="icon icon-delete-large"></span></h2>
+        <div class="meta-data">
+          <p>
+            <img src="http://placehold.it/40x40" class="avatar" alt="" />
+            {{ author }} to <span class="user">me</span>
+            <span class="date">July 15, 2013</span>
+          </p>
+        </div>
+        <div class="body">
+          <p>{{ message }}</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui impedit magni fuga velit nobis quas fugit odio voluptas voluptates odit animi quos nam dolorem harum molestiae culpa sint rem ad esse laboriosam vero quod molestias porro ea dolores eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui impedit magni fuga velit nobis quas fugit odio voluptas voluptates odit animi quos nam dolorem harum molestiae culpa sint rem ad esse laboriosam vero quod molestias porro ea dolores eligendi!</p>
+        </div>
+        <!-- <div class="action">
+          <ul class="options">
+            <li><a href="#" class="active">Answering</a></li>
+            <li><a href="#">Forward</a></li>
+            <div class="clr"></div>
+          </ul>
+          <div class="textarea">
+            <textarea name="r">Hello Jeremy,
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui impedit magni fuga velit nobis quas fugit odio voluptas voluptates odit animi quos nam dolorem harum molestiae culpa sint rem ad esse laboriosam vero quod molestias porro ea dolores eligendi!
+            </textarea>
+          </div>
+        </div> -->
+
+        {{> newmail}}
+      </div>
+
+
+
+</template> 
+
+<template name="newmail">
+  <div class="newEmail-container">
+      <h2>Envoyer un nouvel email</h2>
+  <div class="body">
+      <form class="new-task">
+        <input class="inputSearch" id="input-author" type="text" name="input-author" placeholder="Votre destinataire">
+        <input class="inputSearch" id="input-topic" type="text" name="input-topic" placeholder="Objet de votre email">
+        <textarea class="inputSearch" id="input-message" type="text" name="text" placeholder="Bonjour, "></textarea>
+
+        
+        <input id="input-submit" type="submit">
+      </form>
+      </div>
+    </div>
+</template>

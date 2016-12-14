@@ -1,0 +1,12 @@
+<template name="task">
+ 
+ <!-- new --> 
+  <li data-id="{{_id}}" class="js-article {{#unless opened}}active{{/unless}}"> 
+  	<input type="checkbox" />
+  	<div class="preview">
+  		<h3>{{author}}<small>{{createdAt}}</small></h3>
+  		<p><strong>{{topic}} - </strong>{{ message }}</p>
+  	</div>
+  </li>
+
+</template>
